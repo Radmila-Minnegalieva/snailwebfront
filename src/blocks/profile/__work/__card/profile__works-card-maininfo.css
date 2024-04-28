@@ -1,0 +1,54 @@
+.profile__button {
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 20px;
+    height: 20px;
+    width: 20px;
+}
+
+.profile__button_eye {
+    background-image: url('../../../../images/eye.png');
+    background-size: cover; 
+    background-position: center;
+    background-color: #292929;
+    margin-right: 8px;
+}
+
+.profile__button_choose {
+    background-image: url('../../../../images/choose.png');
+    background-size: cover; 
+    background-position: center;
+    background-color: #292929;
+}
+
+.profile__button_eye, .profile__button_choose{
+    border: none;
+}
+
+.profile__works-card-maininfo, .profile__works-card-buttons {
+    display: flex;
+}
+
+.profile__works-card-buttons {
+    margin-top: 14px;
+    margin-right: 16px;
+}
+
+.profile__works-card-maininfo {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 20px;
+    display: flex; 
+    justify-content: space-between; 
+}
+
+
+
+.profile__works-card-maininfo p {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 14px;
+    margin-left: 16px;
+}

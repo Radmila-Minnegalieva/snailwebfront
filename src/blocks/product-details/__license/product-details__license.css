@@ -1,0 +1,8 @@
+.license {
+    display: flex;
+    margin-top: 20px;
+    border-radius: 50px 50px 50px 0 ; 
+    background-color: #222222;
+    width: 71%;
+    box-shadow: 0px 3px 6px #0000003c;
+  }

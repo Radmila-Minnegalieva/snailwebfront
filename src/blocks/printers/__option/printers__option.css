@@ -1,0 +1,15 @@
+.printers__option {
+    background-color: #1D1C1C;
+    border: 1px #6D6D6D solid;
+    color: #D9D9D9;
+    border-radius: 50px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23px;
+    font-family: 'Roboto';
+    cursor: pointer;
+}
+
+.printers__option:first-child {
+    background-color: #EB572F;
+}

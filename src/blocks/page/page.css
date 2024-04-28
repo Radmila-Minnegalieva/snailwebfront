@@ -1,0 +1,25 @@
+.page {
+    background-color: #1D1C1C;
+    min-height: 100vh;
+    color: #D9D9D9;
+    margin: 0;
+    padding: 0;;
+    font-family: 'Roboto','Arial', sans-serif;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+}
+
+html::-webkit-scrollbar {
+    width: 8px;
+}
+   
+html::-webkit-scrollbar-track {
+    background-color: #1D1C1C;
+    border-radius: 15px;
+}
+   
+html::-webkit-scrollbar-thumb {
+    border-radius: 15px;
+    background: #1D1C1C;
+    border:1px solid #6D6D6D;
+}

@@ -1,0 +1,12 @@
+.card__star{
+    height: 20px;
+    width: 20px;
+    margin-right: 4px;
+}
+
+.card__star:first-child{
+   margin-left: 8px;
+}
+.card__star:last-child{
+    margin-right: 8px;
+}

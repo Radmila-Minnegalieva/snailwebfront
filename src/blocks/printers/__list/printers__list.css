@@ -1,0 +1,21 @@
+.printers__list {
+    height: 301px;
+    overflow-y: auto;
+    /*scrollbar-width: 20px;
+    scrollbar-color: #1D1C1C;*/
+}
+
+.printers__list::-webkit-scrollbar {
+    width: 7px;
+}
+   
+.printers__list::-webkit-scrollbar-track {
+    background-color: #1D1C1C;
+    border-radius: 15px;
+}
+   
+.printers__list::-webkit-scrollbar-thumb {
+    border-radius: 15px;
+    background: #1D1C1C;
+    border:1px solid #6D6D6D;
+}

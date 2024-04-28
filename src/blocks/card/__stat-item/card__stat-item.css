@@ -1,0 +1,9 @@
+.card__stat-item {
+    background-color: #1D1C1C;
+    border: none;
+    padding: 0 8px 0 0;
+}
+
+.card__stat-item:last-child {
+    padding: 0;
+}

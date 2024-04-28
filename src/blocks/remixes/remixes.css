@@ -1,0 +1,11 @@
+.remixes {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    border-radius: 50px 50px 50px 0;
+    background-color: #222222;
+    width: 48%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    box-shadow: 0px 3px 6px #0000003c;
+}

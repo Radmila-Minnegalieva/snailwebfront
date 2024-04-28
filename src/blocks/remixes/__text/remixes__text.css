@@ -1,0 +1,14 @@
+.remix-text {
+    color: #ccc;
+    padding: 10px;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Размещаем элементы по вертикали по центру */
+}
+  
+.remix-text p {
+    margin: 3px 0;
+    font-size: 22px;
+}
+  

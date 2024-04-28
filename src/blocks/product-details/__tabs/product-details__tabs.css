@@ -1,0 +1,40 @@
+.tabs {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  
+.tabs button {
+    background-color: #1d1d1d;
+    color: #ccc;
+    cursor: pointer;
+    padding: 12px 16px;
+    margin-right: 20px;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    transition: all 0.6s;
+  }
+
+.tabs button.hover {
+    border: 1px solid #FFB831;
+    font-weight: bold;
+}
+  
+.tabs button.active {
+    font-weight: bold;
+    border-radius: 50px;
+    border: 1px solid orange;
+  }
+  
+.tab-content p {
+    width: 93%;
+    color: #ccc;
+    margin-top: -10px;
+  }
+  
+.tabs button.active:focus {
+    outline: none;
+  }
+  
+.tab-content {
+    line-height: 1.5;
+  }

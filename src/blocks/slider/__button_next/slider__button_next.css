@@ -1,0 +1,8 @@
+.slider__button_next {
+    background-image: url(../../../images/next.svg);
+    cursor: pointer;
+    background-color: #1d1d1d;
+    border: none;
+    width: 22.5px;
+    height: 41.25px;
+}

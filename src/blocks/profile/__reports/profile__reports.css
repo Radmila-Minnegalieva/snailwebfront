@@ -1,0 +1,12 @@
+.profile__reports{
+    width: 1233px;
+    height: auto;
+    margin-top: -630px; 
+    margin-left: 547px; 
+    margin-right: 0; 
+    gap: 16px;
+    display: grid;
+    grid-template-rows: repeat(3, 3fr);
+    gap: 16px;
+    flex-wrap: wrap;
+}

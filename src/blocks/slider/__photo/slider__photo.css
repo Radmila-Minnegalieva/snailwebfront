@@ -1,0 +1,12 @@
+.slider__photo {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 8px;
+    
+}
+
+.slider__photo:not(.active_photo) {
+    background: #000;
+    opacity: 0.5;
+  }

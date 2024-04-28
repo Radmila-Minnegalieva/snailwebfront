@@ -1,0 +1,13 @@
+.license-image {
+    width: 29%;
+    height: 62%;
+    overflow: hidden;
+    margin: 22px;
+}
+  
+.license-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 50px;
+}
+  

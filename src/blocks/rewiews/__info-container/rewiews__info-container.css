@@ -1,0 +1,14 @@
+.container {
+    width: 65%;
+    border-radius: 50px;
+    padding: 2px;
+    background-color: #222222;
+    margin-bottom: 10px;
+}
+
+.feedback-form {
+    background-color: #222222;
+    border-radius: 50px;
+    padding: 0px;
+    height: 52px;
+}

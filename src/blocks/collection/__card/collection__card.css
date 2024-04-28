@@ -1,0 +1,11 @@
+.collection__card {
+    background-color: #292929;
+    height: 317px;
+    width: 290.25px;
+    border-radius: 16px;
+    padding: 14px, 0px, 14px, 0px;
+    box-sizing: border-box;
+    margin-top: -45px;
+    z-index: 2;
+    box-shadow: 0px 6px 18px 0px #00000040;
+}

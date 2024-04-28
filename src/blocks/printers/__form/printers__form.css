@@ -1,0 +1,8 @@
+.printers__form{
+    border: 1px #6D6D6D solid;
+    border-radius: 20px;
+    align-items: center;
+    display: flex;
+    align-items: center;
+    height: 35px;
+}

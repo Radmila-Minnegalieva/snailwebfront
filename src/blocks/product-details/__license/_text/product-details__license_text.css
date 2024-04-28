@@ -1,0 +1,21 @@
+.license-text {
+    padding: 8px 0px;
+    color: #ccc;
+    font-family: 'Roboto', sans-serif;
+    width: 65%;
+}
+  
+.license-text p {
+      margin: 10px 0; 
+      font-size: 16px;
+}
+    
+.license-text .license-title {
+      font-weight: bold; 
+      font-size: 20px;
+}
+    
+.license-text .license-type {
+      color: #3347FD; 
+}
+    

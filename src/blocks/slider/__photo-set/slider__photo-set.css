@@ -1,0 +1,6 @@
+.slider__photo-set {
+    display: flex;
+    flex-direction: row;
+    margin-top: 19px;
+    margin-left: 56px;
+}

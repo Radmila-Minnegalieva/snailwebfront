@@ -1,0 +1,129 @@
+.mainpage__topworks-container{
+    width: 1,856px;
+    height: 458.38px;
+    gap: 20px;
+    margin-left: 32px;
+    margin-top: 32px;
+    position: relative;
+}
+
+.mainpage__topworks-container-topic{
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    gap: 1510px;
+}
+
+.mainpage__topworks-container-topic-name{
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    place-content: center;
+    width: 179px;
+}
+
+.mainpage__topworks-container-topic-name img{
+    width: 40px;
+    height: 40px;
+}
+
+.mainpage__topworks-container-topic-bound{
+    margin-top: 3px;
+    margin-right: 40px; 
+}
+
+.mainpage__topworks-container-topic-bound img{
+    margin-right: 5px; 
+}
+
+
+.mainpage__topworks-container-topic-name a{
+    margin-top: 3px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 28px;
+    width: 131px;
+    font-weight: bold;
+}
+
+.mainpage__topworks-container-cards{
+    width: 1888px;
+    height: 398.38px;
+    gap: 28px;
+    margin-top: 20px;
+    display: flex;
+    /*grid-template-columns: repeat(6, 6fr);*/
+    overflow-x: auto;
+    overflow-y: hidden;
+    position: relative;
+    align-items: center;
+}
+
+.mainpage__topworks-container-cards::-webkit-scrollbar {
+    display: none; 
+}
+
+.mainpage__topworks-container-keyboard {
+    position: absolute;
+    z-index: 3;
+    align-items: center;
+    margin-top: 175px;
+    margin-left: 11px;
+}
+
+.mainpage__topworks-container-keyboard {
+    display: none;
+  }
+  
+  .mainpage__topworks-container-keyboard.show {
+    display: flex; 
+  }
+  
+  .mainpage__topworks-container-keyboard.hide {
+    display: none;
+  }
+
+  .left-gradient {
+    display: none;
+  }
+  
+  .left-gradient.show {
+    display: flex; 
+  }
+  
+  .left-gradient.hide {
+    display: none;
+  }
+
+.right-image {
+    margin-left: 1655px; 
+}
+
+.right-image-new {
+    margin-left: 1655px; 
+}
+
+.left-gradient {
+    background-color: #34343433;
+    backdrop-filter: blur(5px);                          
+    height: 400px;
+    width: 120px;
+    margin-left: -10px;
+    opacity: 0.5;
+    margin-top: 90px;
+    z-index: 2;
+    position: absolute;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.right-gradient {
+    background-color: #34343433;
+    backdrop-filter: blur(5px);                            
+    height: 400px;
+    width: 110px;
+    opacity: 0.5;
+    margin-top: 100px;
+    z-index: 2;
+    position: absolute;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    margin-left: 1755px; 
+}

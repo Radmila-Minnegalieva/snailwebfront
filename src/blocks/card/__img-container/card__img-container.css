@@ -1,0 +1,7 @@
+.card__img-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 17px;
+    margin-right: 17px;
+}

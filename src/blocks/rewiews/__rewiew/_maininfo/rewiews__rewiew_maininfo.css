@@ -1,0 +1,10 @@
+.maininfo {
+    flex: 1;
+    margin-right: 1px; 
+    padding: 10px;
+}
+
+.maininfo .text {
+    margin-top: -10px; 
+}
+  

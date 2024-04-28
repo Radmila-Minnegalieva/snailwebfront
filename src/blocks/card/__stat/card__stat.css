@@ -1,0 +1,5 @@
+.card__stat {
+    display: flex;
+    height: 36px;
+    justify-content: space-between;
+}

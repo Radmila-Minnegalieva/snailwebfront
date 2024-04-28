@@ -1,0 +1,8 @@
+.printers__add-button{
+    background-color: #1d1d1d;
+    background-image: url('../../../images/add-btton.svg');
+    width: 44px;
+    height: 36px;
+    border: none;
+    margin-left: 8px;
+}

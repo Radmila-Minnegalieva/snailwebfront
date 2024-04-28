@@ -1,0 +1,25 @@
+.mainpage__tags-container{
+    width: 1,856px;
+    margin-top: 32px;
+    margin-left: 32px;
+}
+
+.mainpage__tags-container span{
+    display: inline-block;
+    background-color: #1d1d1d;
+    color: #ccc;
+    padding: 8px 16px;
+    border-radius: 45.07px;
+    margin-right: 9.01px;
+    margin-bottom: 13px;
+    margin-top: 3px;
+    cursor: pointer;
+    flex: 0 0 calc(16.666% - 10px);
+    border: 1.13px solid #EB572F;
+    font-family: 'Roboto', sans-serif;
+    font-size: 22.54px;
+}
+
+.mainpage__tags-container span:hover{
+    border: 1.13px solid #FFB831;
+}

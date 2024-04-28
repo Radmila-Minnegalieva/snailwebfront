@@ -1,0 +1,7 @@
+.printers__options{
+    display: grid;
+    grid-template-columns: 341px 128px 204px;
+    margin: 24px 0;
+    height: 64px;
+    gap: 8px;
+}

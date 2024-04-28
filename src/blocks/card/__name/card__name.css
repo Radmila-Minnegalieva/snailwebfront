@@ -1,0 +1,7 @@
+.card__name {
+    font-size: 50px;
+    font-weight: 900;
+    line-height: 59px;
+    align-items: center;
+    margin: 24px auto;
+}

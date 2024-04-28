@@ -1,0 +1,8 @@
+.search-button {
+    border: none;
+    background-color: #1d1d1d;
+    background-image: url('../../images/search-button.svg');
+    width: 18px;
+    height: 19px;
+    margin: 8px 8px 8px 12px;
+}

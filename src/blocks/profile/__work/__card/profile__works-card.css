@@ -1,0 +1,10 @@
+.profile__works-card {
+    box-shadow: 0 2px 4px #00000040;
+    background-color: #292929;
+    width: 290.25px;
+    height: 307px;
+    border-radius: 16px;
+    padding: 14px, 0px, 14px, 0px; 
+    box-sizing: border-box;
+    gap: 16px;
+}

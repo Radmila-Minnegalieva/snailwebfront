@@ -1,0 +1,7 @@
+.avatar__button {
+    border: none;
+    background-color: #1d1d1d;
+    background-image: url('../../../images/follow-button.svg');
+    width: 44px;
+    height: 36px;
+}

@@ -1,0 +1,18 @@
+.profile__works-card-photo {
+    width: 290.25px;
+    height: 211px;
+    overflow: hidden;
+    margin-top: 20px;
+    border-radius: 10px;
+    gap: 10px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+.profile__works-card-photo img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover;
+    border-radius: 8px;
+}

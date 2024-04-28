@@ -1,0 +1,24 @@
+.similarmodellist {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    font-size: 22px;
+}
+
+.similar-text {
+    margin-left: 140px;
+    font-size: 30px;
+    padding: 12px;
+    font-weight: 700;
+}
+
+.similar-model-container {
+    /*width: 85%;*/
+    margin-left: 140px;
+    width: 1,640px;
+    display: grid;
+    grid-template-columns: repeat(5, 5fr);
+    gap: 16px;
+}

@@ -1,0 +1,14 @@
+.product-details {
+    padding: 20px;
+    width: 80%;
+    margin: 20px auto;
+    text-align: left;
+    color: #ffffff;
+    align-items: flex-start;
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+  }
+
+.product-detail {
+    width: 61%;
+  }

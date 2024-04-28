@@ -1,0 +1,9 @@
+.printers__input{
+    border: none;
+    background-color: #1d1d1d;
+    outline: none;
+    /*margin: 8px 50px 8px 0;*/
+    margin-right: 50px;
+    padding: 0;
+    color: white;
+}

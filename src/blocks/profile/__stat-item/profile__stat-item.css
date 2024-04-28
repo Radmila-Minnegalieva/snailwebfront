@@ -1,0 +1,20 @@
+.profile__stat-item {
+    background-color: #292929;
+    border: 1px #6D6D6D solid;
+    margin: 0 8px 0 0;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18.75px;
+    color: #E5E5E5;
+    justify-content: center;
+    height: 38px;
+    padding: 6px 10px 6px 11px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+/*.profile__stat-item:last-child {
+    padding-right: 0;
+}*/

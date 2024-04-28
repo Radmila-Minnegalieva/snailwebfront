@@ -1,0 +1,33 @@
+.mainpage__slider-container{
+    width: 1,847.53px;
+    height: 365px;
+    margin-left: 36.23px;
+    margin-right: 36.23px;
+}
+
+.mainpage-slider_container_slide img{
+    width: 921.51px;
+    height: 337.96px;
+    border-radius: 27.04px;
+}
+
+.mainpage__slider-container_sliderpanel{
+    height: 337.96px;
+    width: 1,847.53px;
+    grid-column-gap: 4.51px;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+}
+
+.mainpage-slider_container_slide_bound{
+    display: grid;
+    width: 67.59px;
+    margin-left: 889.97px;
+    place-content: center;
+    grid-template-columns: repeat(3, 3fr);
+    gap: 4.51px;
+}
+
+.mainpage-slider_container_slide_bound img{
+    margin-top: 13.52px;   
+}

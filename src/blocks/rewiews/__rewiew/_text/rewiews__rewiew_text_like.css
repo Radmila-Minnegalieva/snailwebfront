@@ -1,0 +1,30 @@
+.rewiew_likes {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.rewiew_likes img {
+    align-self: flex-end;
+    margin-bottom: 25px;
+    margin-right: 4px;
+}
+
+.count_likes {
+    align-self: flex-end;
+    margin-bottom: 24px;
+    font-size: 16px;
+}
+
+#no_photo {
+    margin-right: 10px;
+    margin-bottom: 30px;
+    height: 140px;
+}
+
+#no_photo1 {
+    margin-bottom: 97px;
+}
+
+#no_photo2 {
+    margin-bottom: 95px;
+}

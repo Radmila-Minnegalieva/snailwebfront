@@ -1,0 +1,28 @@
+.small-photos {
+    max-width: 100%;
+    display: flex;
+    justify-content: flex-start; 
+    margin-top: 5px;
+    position: absolute; 
+    top: 70%; 
+    left: 10%; 
+    z-index: 2; 
+    margin-right: 10px;
+}
+
+.small-photos img {
+    margin-right: 5px; 
+}
+
+.small-photos img {
+    margin: 0 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 30px; 
+    height: 30px; 
+    object-fit: cover; 
+}
+
+.rewiew_photo .small-photos > img.active {
+    border: 2px solid blue;
+  }

@@ -1,0 +1,13 @@
+.review {
+    margin-bottom: 20px;
+    background-color: #222222;
+    border-radius: 50px 50px 50px 0px;
+    width: 100%;
+    min-height: 200px; 
+    box-shadow: 0px 3px 6px #0000003c;
+    display: flex;
+}
+
+.review.no_photo {
+    min-height: 140px;
+}

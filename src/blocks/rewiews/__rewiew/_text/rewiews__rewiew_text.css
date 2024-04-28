@@ -1,0 +1,19 @@
+.text {
+    padding: 10px;
+    display: inline-block;
+    text-align: left;
+    color: #D9D9D9;
+    font-size: 20px;
+}
+
+.text {
+    padding: 0px 10px ;
+    display: inline-block;
+    text-align: left;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-right: 10px;
+    height: 85%;
+    margin-left: 10px;
+}

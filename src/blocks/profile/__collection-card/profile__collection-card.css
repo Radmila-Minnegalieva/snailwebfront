@@ -1,0 +1,11 @@
+.profile__collection-card {
+    box-shadow: 0 2px 4px #00000040;
+    background-color: #292929;
+    height: 307px;
+    border-radius: 16px;
+    padding: 14px 16px;
+    box-sizing: border-box;
+    margin-top: -45px;
+    z-index: 2;
+    box-shadow: 0px 6px 18px 0px #00000040;
+}

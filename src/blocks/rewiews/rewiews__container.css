@@ -1,0 +1,12 @@
+.reviews-container {
+  font-size: 22px;
+  max-width: 80%;
+  margin: 20px auto;
+  color: #ffffff;
+}
+
+.reviews {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}

@@ -1,0 +1,19 @@
+.printer__item {
+    display: flex;
+    border: 1px #3347FD solid;
+    border-radius: 16px;
+    padding: 4px 16px;
+    margin: 0 8px 0 0;
+}
+
+.printer__item:first-child {
+    border: 1px #FFB831 solid;
+    padding-left: 8px;
+}
+
+/*.printer__item:last-child {
+    border: none;
+    margin-right: 0px;
+    justify-self: end;
+    padding: 0;
+}*/
