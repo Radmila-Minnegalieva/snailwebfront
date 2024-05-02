@@ -10,6 +10,10 @@ import add from "../images/add.svg";
 import { useParams } from 'react-router-dom';
 
 const ProductCard = ({ onDataReceived }) => {
+  const [dataResponseUsername, setDataResponseUsername] = useState(null);
+  const [dataResponseName, setDataResponseName] = useState(null);
+  const { id } = useParams();
+  console.log('ID from URL:', id);
   const data = {
     images: [
       "/images/main-photo.png",
@@ -60,7 +64,7 @@ const ProductCard = ({ onDataReceived }) => {
   const [users, setUsers] = useState([]);
   const [token, setToken] = useState('');
   const [product, setProduct] = useState(null);
-  const { id } = useParams();
+  
 
   console.log('ПОЛУЧЕНО', onDataReceived)
 
@@ -109,22 +113,26 @@ const ProductCard = ({ onDataReceived }) => {
               }
             }
           );
-
+  
           if (!response.ok) {
-            throw new Error('Ошибка при запросе:', response.statusText);
+            throw new Error('Failed to fetch data');
           }
-
+  
           const responseData = await response.json();
           setData(responseData);
-          console.log(responseData[0])
+          console.log(id);
+          console.log(responseData[id]);
+          setDataResponseUsername(responseData[id].publisher.username)
+          setDataResponseName(responseData[id].name)
+
         } catch (error) {
-          console.error('Произошла ошибка:', error);
+          console.error('Error fetching data:', error);
         }
       }
     };
-
-    fetchData(); // Вызываем функцию при изменении id или токена
-  }, [token]); // Зависимости: id и token
+  
+    fetchData(); // Call the function to fetch data
+  }, [id, token]); // Dependencies: id and token
 
 
   const [activeIndex, setActiveIndex] = useState(null); // Используем null чтобы ни одно изображение не было активным изначально
@@ -196,10 +204,10 @@ const ProductCard = ({ onDataReceived }) => {
       <div className="card__info">
         <div className="bio">
           <p className="bio__description">{data.description}</p>
-          <p className="card__name">{data.name}</p>
+          <p className="card__name">{dataResponseName}</p>
           <div className="avatar">
             <img className="avatar__img" src={[data.images[0]]} alt="Avatar" />
-            <p className="avatar__name">{data.avatarName}</p>
+            <p className="avatar__name">{dataResponseUsername}</p>
             <button className="card__button" id="follow">
               <img className="" src={follow} alt="repost button" />
             </button>

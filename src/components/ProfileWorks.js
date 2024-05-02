@@ -2,6 +2,7 @@ import React, { useState, useEffect} from "react";
 import { connect } from 'react-redux';
 import { saveCardId } from './actions';
 import { selectSavedCardId } from './selectors';
+import { useParams } from 'react-router-dom';
 
 import profile_works_card_photo1 from "../images/profile_card_1.svg";
 import profile_works_card_photo2 from "../images/profile_card_2.svg";
@@ -17,6 +18,7 @@ import like from "../images/like.png";
 import star from "../images/star.png";
 
 const ProfileWorks = ({ onDataReceived, saveCardId, savedCardId }) => {
+  const { id } = useParams();
   const works = [
     {
       name: "Crocs",
@@ -71,6 +73,7 @@ const ProfileWorks = ({ onDataReceived, saveCardId, savedCardId }) => {
   const [token, setToken] = useState("");
   const [responseDataState, setResponseDataState] = useState(null);
   console.log('onDataReceived:', onDataReceived);
+  
 
   const handleButtonClick = async (index) => {
     try {
@@ -118,6 +121,7 @@ const ProfileWorks = ({ onDataReceived, saveCardId, savedCardId }) => {
       console.log(responseData);
       setResponseDataState(responseData[index]);
       saveCardId(index);
+      window.location.href = `/card/${index}`;
       console.log("Успешный ответ (Данные):", responseData[index]);
     } catch (error) {
       console.error("Произошла ошибка:", error);

@@ -1,10 +1,82 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import { useParams } from 'react-router-dom';
 import {reviewsClass} from './Rewiews';
 import {remixesClass} from './Remixes';
 import {similarModelClass} from "./SimilarModelCard";
 
 const ProductDetails = () => {
   const [activeTab, setActiveTab] = useState("description");
+  const [dataResponseDescription, setDataResponseDescription] = useState(null);
+  const [dataResponseLicence, setDataResponseLicence] = useState(null);
+  const { id } = useParams();
+  const [token, setToken] = useState("");
+
+  useEffect(() => {
+    const fetchToken = async () => {
+      try {
+        const response = await fetch('http://127.0.0.1:8000/api/token/', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({
+            alias: 'radmilaradmila',
+            password: 'radmila05122004'
+          })
+        });
+  
+        if (!response.ok) {
+          console.error('Ошибка при запросе:', response.statusText);
+          return;
+        }
+  
+        const data = await response.json();
+        setToken(data.access);
+        console.log('Успешный ответ:', data);
+      } catch (error) {
+        console.error('Произошла ошибка:', error);
+      }
+    };
+  
+    fetchToken();
+  }, []);
+  
+
+  const [date, setData] = useState(null);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      if (token) {
+        try {
+          const response = await fetch(
+            `http://127.0.0.1:8000/api/publications/1/`,
+            {
+              headers: {
+                Authorization: `Bearer ${token}`
+              }
+            }
+          );
+  
+          if (!response.ok) {
+            throw new Error('Failed to fetch data');
+          }
+  
+          const responseData = await response.json();
+          setData(responseData);
+          console.log(id);
+          console.log(responseData[id]);
+          setDataResponseDescription(responseData[id].description)
+          setDataResponseLicence(responseData[id].licence)
+
+        } catch (error) {
+          console.error('Error fetching data:', error);
+        }
+      }
+    };
+  
+    fetchData(); // Call the function to fetch data
+  }, [id, token]); // Dependencies: id and token
+
 
   const handleTabChange = (tab) => {
     setActiveTab(tab);
@@ -91,7 +163,7 @@ const ProductDetails = () => {
           <h2>Описание</h2>
           {activeTab === "description" && (
             <p>
-              {componentData.tabContent.description}
+              {dataResponseDescription}
             </p>
           )}
           {activeTab === "reviews" && (
@@ -119,7 +191,7 @@ const ProductDetails = () => {
           <div className="license-text">
             <p className="license-title">Лицензия</p>
             <p className="license-description">Эта работа под лицензией</p>
-            <p className="license-type">{componentData.license.type}</p>
+            <p className="license-type">{dataResponseLicence}</p>
           </div>
         </div>
       </div>
@@ -128,3 +200,4 @@ const ProductDetails = () => {
 };
 
 export default ProductDetails;
+
